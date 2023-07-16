@@ -1,0 +1,122 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body
+{
+	background-color: #FFCA33;
+}
+
+.container{
+	width: 134vmin;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	overflow: hidden;
+	border: 10px solid #ffffff;
+	border-radius: 8px;
+	box-shadow: 10px 25px 30 px rgba(30,30,200,0.3);
+
+
+}
+.wrapper{
+	width: 100%;
+	display: flex;
+	animation: slide 12s infinite;
+
+}
+.section{
+	
+}
+@Keyframes slide{
+	0%{
+		transform: translateX(0);
+	}
+	25%{
+		transform: translateX(0);
+	}
+	30%
+	{
+		transform: translateX(-100%);
+	}
+	50%{
+		transform: translateX(-100%);
+	}
+	55%{
+		transform: translateX(-200%);
+	}
+	75%{
+		transform: translateX(-200%);
+	}
+	80%
+	{
+		transform: translateX(-300%);
+	}
+	100%
+	{
+		transform: translateX(-300%);
+	}
+}
+.button {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 30px;
+  padding: 20px;
+  width: 230px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.banner-card
+{
+	position: cover;
+}
+.banner-card image
+{
+	max-width: 100%;
+	height=auto;
+}
+.banner-text
+{
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	color:black;
+	padding: 20px;
+}
+.banner-text h4
+{
+	font-size: 25px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
